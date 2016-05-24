@@ -1,0 +1,14 @@
+{
+  "main": "script.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.3.4",
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.13.0",
+    "request": "^2.34.0",
+    "jquery": "~2.1.1"
+  }
+}
