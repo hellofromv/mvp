@@ -21,10 +21,9 @@ html {
 body {
   margin: 0;
   line-height: 1.5;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Lato", Roboto, Helvetica, Arial, sans-serif;
   color: #333;
 }
-
 
 /* main ie fix */
 
@@ -41,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", Times, "Times New Roman", serif;
+  font-family: "Lato", "Roboto Slab", Times, "Times New Roman", serif;
 }
 
 h1 {
@@ -124,7 +123,8 @@ a:active {
 
 .navigation {
   background-color: #eee;
-  font-weight: 700;
+  font-weight: 900;
+  opacity: 0.75;
 }
 
 .navigation-list {
@@ -196,10 +196,13 @@ a:active {
 /* footer */
 
 .footer {
+  margin-top: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #333;
+  /*background-color: #333;*/
+  background-color: #C6C6C6;
   color: #fff;
+  opacity: 0.75;
 }
 
 .footer a,
@@ -223,6 +226,63 @@ a:active {
   }
 }
 
-.breed_name {
-  font-size: 12px;
+.background {
+  position: relative;
+  overflow: hidden;
+}
+ 
+.background img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+html {
+  background: url('http://7hdwallpapers.com/wp-content/uploads/2015/10/3052-welsh-corgi-puppies.jpg') no-repeat fixed center;
+}
+
+img {
+  height: auto;
+  width: 50%;
+  border: 2px solid white;
+}
+
+.desc {
+  padding-bottom: 35px;
+}
+
+.home-header {
+  text-align: center;
+}
+
+.breed_list {
+  /*font-size: 12px;*/
+  text-align: center;
+}
+
+.indent {
+  padding-left: 20px;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+  color: black;
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 }
